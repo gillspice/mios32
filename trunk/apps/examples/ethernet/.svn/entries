@@ -1,0 +1,40 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/apps/examples/ethernet
+svn://svnmios.midibox.org/mios32
+
+
+
+2010-10-24T13:54:51.210023Z
+1118
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+telnetd
+dir
+
+osc
+dir
+
+webserver
+dir
+
+telnet
+dir
+

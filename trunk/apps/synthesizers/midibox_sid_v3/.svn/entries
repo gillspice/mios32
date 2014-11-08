@@ -1,0 +1,77 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/apps/synthesizers/midibox_sid_v3
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-04-21T21:18:38.374221Z
+1184
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+tools
+dir
+
+doc
+dir
+
+juce
+dir
+
+core
+dir
+
+mios32
+dir
+
+Makefile
+file
+
+
+
+
+2011-05-30T23:11:51.493339Z
+68bbe33f7abb135ab46dfcd9e9b3919a
+2011-04-21T21:18:38.374221Z
+1184
+tk
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3525
+

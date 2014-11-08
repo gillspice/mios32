@@ -1,0 +1,112 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/apps/tutorials
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-04-25T19:06:36.041491Z
+1192
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+005_polling_j5_pins
+dir
+
+006_rtos_tasks
+dir
+
+017_sequencer
+dir
+
+020_lcd
+dir
+
+014b_enc_j5_relative
+dir
+
+014_enc_relative
+dir
+
+001_forwarding_midi
+dir
+
+013_mf
+dir
+
+002_parsing_midi
+dir
+
+023_mutex
+dir
+
+019_midi_player
+dir
+
+015_enc_absolute
+dir
+
+011_ain
+dir
+
+015b_enc_j5_absolute
+dir
+
+025_sysex_and_eeprom
+dir
+
+010_din
+dir
+
+012_ain_muxed
+dir
+
+021_glcd
+dir
+
+018_arpeggiator
+dir
+
+026_dpot
+dir
+
+016_aout
+dir
+
+003_debug_messages
+dir
+
+007_mios32_timer
+dir
+
+009_dout
+dir
+
+024_i2s_synth
+dir
+
+008_j5_outputs
+dir
+
+004_sending_midi
+dir
+
+022_glcd_touchpanel
+dir
+

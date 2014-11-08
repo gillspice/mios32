@@ -1,0 +1,64 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-05-30T20:43:14.838525Z
+1215
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+tools
+dir
+
+apps
+dir
+
+include
+dir
+
+doc
+dir
+
+programming_models
+dir
+
+bin
+dir
+
+modules
+dir
+
+FreeRTOS
+dir
+
+bootloader
+dir
+
+etc
+dir
+
+mios32
+dir
+
+drivers
+dir
+

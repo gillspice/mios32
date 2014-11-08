@@ -1,0 +1,61 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/apps
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-05-30T20:43:14.838525Z
+1215
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+controllers
+dir
+
+tutorials
+dir
+
+troubleshooting
+dir
+
+synthesizers
+dir
+
+mios32_test
+dir
+
+misc
+dir
+
+benchmarks
+dir
+
+quickies
+dir
+
+sequencers
+dir
+
+examples
+dir
+
+templates
+dir
+

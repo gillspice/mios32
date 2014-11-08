@@ -1,0 +1,43 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/drivers
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-03-30T21:38:49.375737Z
+1157
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+MacOS
+dir
+
+gnustep
+dir
+
+LPC17xx
+dir
+
+STM32F10x
+dir
+
+MIOSJUCE
+dir
+

@@ -1,0 +1,43 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/apps/troubleshooting
+svn://svnmios.midibox.org/mios32
+
+
+
+2010-10-24T13:54:51.210023Z
+1118
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+mbhp_core_stm32_module_scan
+dir
+
+sdcard_tools
+dir
+
+mbsid_testtone
+dir
+
+iic_midi
+dir
+
+mbhp_core_stm32_module
+dir
+

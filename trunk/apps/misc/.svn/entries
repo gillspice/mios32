@@ -1,0 +1,43 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/apps/misc
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-04-18T23:20:38.634455Z
+1177
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+usb_mass_storage_device
+dir
+
+rgb_led_controller
+dir
+
+mbsid_can_osc_proxy
+dir
+
+usb_midi_2x2
+dir
+
+usb_osc_midi_cv_proxy
+dir
+

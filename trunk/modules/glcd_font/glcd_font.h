@@ -1,0 +1,22 @@
+// $Id: glcd_font.h 43 2008-09-30 23:30:38Z tk $
+/*
+ * Header File for GLCD Fonts
+ *
+ * ==========================================================================
+ */
+
+#ifndef _GLCD_FONT_H
+#define _GLCD_FONT_H
+
+/////////////////////////////////////////////////////////////////////////////
+// Defines array pointers to all available fonts
+/////////////////////////////////////////////////////////////////////////////
+
+extern const u8 GLCD_FONT_BIG[];
+extern const u8 GLCD_FONT_SMALL[];
+extern const u8 GLCD_FONT_NORMAL[];
+extern const u8 GLCD_FONT_KNOB_ICONS[];
+extern const u8 GLCD_FONT_METER_ICONS_H[];
+extern const u8 GLCD_FONT_METER_ICONS_V[];
+
+#endif /* _GLCD_FONT_H */

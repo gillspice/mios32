@@ -1,0 +1,34 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/FreeRTOS/Source/portable/GCC
+svn://svnmios.midibox.org/mios32
+
+
+
+2010-09-20T20:43:59.914898Z
+1064
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+ARM_CM3
+dir
+
+ARM_CM3_MPU
+dir
+

@@ -1,0 +1,40 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/apps/synthesizers/midibox_sid_v3/juce
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-01-27T21:02:09.231335Z
+1139
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+build
+dir
+
+wrapper
+dir
+
+resid
+dir
+
+src
+dir
+

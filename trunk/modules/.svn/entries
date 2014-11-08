@@ -1,0 +1,103 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/modules
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-05-16T21:57:31.183043Z
+1207
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+sid
+dir
+
+uwindows
+dir
+
+random
+dir
+
+midifile
+dir
+
+msd
+dir
+
+fram
+dir
+
+eeprom
+dir
+
+dmx
+dir
+
+sequencer
+dir
+
+notestack
+dir
+
+uip
+dir
+
+glcd_font
+dir
+
+blm_scalar
+dir
+
+blm_x
+dir
+
+app_lcd
+dir
+
+fatfs
+dir
+
+mbnet
+dir
+
+dpot
+dir
+
+microvga
+dir
+
+aout
+dir
+
+freertos_utils
+dir
+
+blm
+dir
+
+template
+dir
+
+minfs
+dir
+
+dosfs
+dir
+

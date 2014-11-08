@@ -1,0 +1,83 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/modules/uip/apps
+svn://svnmios.midibox.org/mios32
+
+
+
+2010-01-09T21:33:24.030805Z
+816
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+telnetd
+dir
+
+dhcpc
+dir
+
+smtp
+dir
+
+webserver
+dir
+
+hello-world
+dir
+
+resolv
+dir
+
+webclient
+dir
+
+README
+file
+
+
+
+
+2011-05-30T23:12:24.510227Z
+be269836a8ae41c47e808f3890411108
+2009-02-22T23:02:23.883774Z
+363
+tk
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+94
+

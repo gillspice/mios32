@@ -1,0 +1,61 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/apps/examples
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-03-14T22:03:35.987851Z
+1145
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+uwindows
+dir
+
+com_console
+dir
+
+blm_x
+dir
+
+midi_console
+dir
+
+fastscan_button_matrix_16x16
+dir
+
+microvga
+dir
+
+dmx
+dir
+
+blm
+dir
+
+cv_autotune
+dir
+
+srio
+dir
+
+ethernet
+dir
+

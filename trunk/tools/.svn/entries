@@ -1,0 +1,43 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/tools
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-04-28T17:56:35.329002Z
+1195
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+mios32_scan
+dir
+
+mios32_terminal
+dir
+
+osc_midi_proxy
+dir
+
+blm_scalar_emulation
+dir
+
+mios_studio
+dir
+

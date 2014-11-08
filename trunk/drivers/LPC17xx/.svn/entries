@@ -1,0 +1,37 @@
+10
+
+dir
+1215
+svn://svnmios.midibox.org/mios32/trunk/drivers/LPC17xx
+svn://svnmios.midibox.org/mios32
+
+
+
+2011-03-27T18:44:04.646649Z
+1155
+tk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+64d6c282-3004-4abb-abc2-16bea14f3ebd
+
+usbstack
+dir
+
+iap
+dir
+
+CMSIS
+dir
+
