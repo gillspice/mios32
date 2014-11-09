@@ -40,7 +40,7 @@
 #define PRIORITY_TASK_MATRIX_SCAN	( tskIDLE_PRIORITY + 2 )
 
 // scan 16 rows
-#define MATRIX_NUM_ROWS 16
+#define MATRIX_NUM_ROWS 17
 
 // sink drivers used? (no for Fatar keyboard)
 #define MATRIX_DOUT_HAS_SINK_DRIVERS 0
@@ -81,7 +81,7 @@ static u32 keyboard_delay_slowest;
 int selected_midi_port;
 
 int last_velocity;
-
+int channel = KEYBOARD_MIDI_CHN;
 int no_velocity;
 
 // this table scales the velocity counter (0..127) to the velocity value which will be sent via MIDI
@@ -133,6 +133,10 @@ const int note_table[192] = {
   96,89,82,75,68,61,54,47,
 };
 
+const int channel_table[16] = {
+  7,6,5,4,3,2,1,0,15,14,13,12,11,10,9,8
+};
+
 /////////////////////////////////////////////////////////////////////////////
 // This hook is called after startup to initialize the application
 /////////////////////////////////////////////////////////////////////////////
@@ -158,6 +162,9 @@ void APP_Init(void)
   int pin;
   for(pin=0; pin<12; ++pin)
     MIOS32_BOARD_J5_PinInit(pin, MIOS32_BOARD_PIN_MODE_INPUT_PU);
+	
+  //Initialize pin 7 as an output to be row 17
+  MIOS32_BOARD_J5_PinInit(7, MIOS32_BOARD_PIN_MODE_OUTPUT_PP);
 	
   // initialize keyboard delay values
   keyboard_delay_fastest = INITIAL_KEYBOARD_DELAY_FASTEST;
@@ -422,8 +429,8 @@ void BUTTON_NotifyToggle(u8 row, u8 column, u8 pin_value, u32 timestamp)
       velocity = 127;
 
     last_velocity=velocity_table[velocity];
-    MIOS32_MIDI_SendNoteOn(0x20, KEYBOARD_MIDI_CHN, note_number, last_velocity);
-	MIOS32_MIDI_SendNoteOn(0x10, KEYBOARD_MIDI_CHN, note_number, last_velocity);
+    MIOS32_MIDI_SendNoteOn(0x20, channel, note_number, last_velocity);
+	MIOS32_MIDI_SendNoteOn(0x10, channel, note_number, last_velocity);
 	
 #if DEBUG_VERBOSE_LEVEL >= 2
     DEBUG_MSG("row=0x%02x, column=0x%02x, pin_value=%d -> pin=%d, timestamp=%u -> NOTE ON (delay=%d); velocity=%d\n",
@@ -431,8 +438,8 @@ void BUTTON_NotifyToggle(u8 row, u8 column, u8 pin_value, u32 timestamp)
 #endif
   } else if( send_note_off ) {
     // send Note On with velocity 0
-    MIOS32_MIDI_SendNoteOn(0x20, KEYBOARD_MIDI_CHN, note_number, 0x00);
-	MIOS32_MIDI_SendNoteOn(0x10, KEYBOARD_MIDI_CHN, note_number, 0x00);
+    MIOS32_MIDI_SendNoteOn(0x20, channel, note_number, 0x00);
+	MIOS32_MIDI_SendNoteOn(0x10, channel, note_number, 0x00);
 	
 
 #if DEBUG_VERBOSE_LEVEL >= 2
@@ -474,7 +481,9 @@ static void TASK_MatrixScan(void *pvParameters)
       }
 
       // determine selection mask for next row (written into DOUT registers while reading DIN registers)
-      u16 select_row_pattern = ~(1 << (row+1));
+	  u16 select_row_pattern = ~(1 << (row+1));
+	  //if (row == 16) {select_row_pattern = 0xffff;}
+   
 #if MATRIX_DOUT_HAS_SINK_DRIVERS
       select_row_pattern ^= 0xffff; // invert selection pattern if sink drivers are connected to DOUT pins
 #endif
@@ -488,6 +497,8 @@ static void TASK_MatrixScan(void *pvParameters)
       MIOS32_SPI_RC_PinSet(MIOS32_SRIO_SPI, MIOS32_SRIO_SPI_RC_PIN, 0); // spi, rc_pin, pin_value
       MIOS32_DELAY_Wait_uS(1);
       MIOS32_SPI_RC_PinSet(MIOS32_SRIO_SPI, MIOS32_SRIO_SPI_RC_PIN, 1); // spi, rc_pin, pin_value
+	  if ( row == 15 ) {MIOS32_BOARD_J5_PinSet(7, 0);}
+	  else {MIOS32_BOARD_J5_PinSet(7, 1);}
 
       if( row >= 0 ) {
 	// combine read DIN bytes to 24bit value
@@ -503,8 +514,18 @@ static void TASK_MatrixScan(void *pvParameters)
 	  int column;
 	  for(column=0; column<24; ++column) {
 	    u32 mask = 1 << column;
-	    if( changed & mask )
-	      BUTTON_NotifyToggle(row, column, (din_pattern & mask) ? 1 : 0, timestamp);
+	    if( changed & mask ){
+		  if (row == 16) {
+			channel = channel_table[column - 8];
+			MIOS32_LCD_CursorSet (0,1);
+			MIOS32_LCD_PrintFormattedString("%02d", channel + 1);
+			#if DEBUG_VERBOSE_LEVEL >= 1
+			DEBUG_MSG("WARNING: row=0x%02x, column=0x%02x,  pin_value=%d, channel=%02x /n",row, column, (din_pattern & mask) ? 1 : 0, channel);
+			#endif
+			}
+		  else {
+	      BUTTON_NotifyToggle(row, column, (din_pattern & mask) ? 1 : 0, timestamp);}
+		  }
 	  }
 	}
       }
