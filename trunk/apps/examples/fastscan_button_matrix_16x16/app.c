@@ -243,7 +243,7 @@ void APP_Background(void)
 /////////////////////////////////////////////////////////////////////////////
 void APP_MIDI_NotifyPackage(mios32_midi_port_t port, mios32_midi_package_t midi_package)
 {
-/*	
+	
 // forward USB0->UART0 and UART0->USB0
   switch( port ) {
     case 0x10:  MIOS32_MIDI_SendPackage(0x20, midi_package);
@@ -255,7 +255,7 @@ void APP_MIDI_NotifyPackage(mios32_midi_port_t port, mios32_midi_package_t midi_
 	break;
 	
     case 0x20: MIOS32_MIDI_SendPackage(0x10,  midi_package); break;
-  }*/
+  }
 }
 
 
