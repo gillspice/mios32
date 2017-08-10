@@ -1,0 +1,8 @@
+SET PATH= %PATH%;C:\MSYS\1.0\bin;c:\mios32_toolchain\bin
+set MIOS32_PATH=/C/mios32/trunk
+set MIOS32_BIN_PATH=C:\mios32\trunk\bin
+set MIOS32_GCC_PREFIX=arm-none-eabi
+set MIOS32_FAMILY=STM32F10x
+set MIOS32_PROCESSOR=STM32F103RE
+set MIOS32_BOARD=MBHP_CORE_STM32
+set MIOS32_LCD=clcd
